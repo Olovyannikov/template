@@ -1,0 +1,22 @@
+section#top.screen.screen--hidden.screen--intro.js-scrollspy
+  .screen__wrapper
+    include ./../sections/_intro.pug 
+  
+.screen__footer.js-footer
+    button.screen__footer-enlarge.js-footer-toggler(type='button' aria-label='Показать сообщение')
+      svg(width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M0 6.35337L3.90271 4.99012L0 3.64663L1.34615 1.32374L4.44287 4.01073L3.67364 0H6.34615L5.57692 4.01073L8.65385 1.32374L10 3.64663L6.13405 4.99012L10 6.35337L8.65385 8.65651L5.57692 5.98927L6.34615 10H3.67364L4.44287 5.96952L1.34615 8.65651L0 6.35337Z' fill='currentColor')
+    button.screen__footer-collapse.js-footer-toggler(type='button' aria-label='Скрыть сообщение')
+      svg(width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+        line(x1='12.3536' y1='0.353553' x2='0.738349' y2='11.9688' stroke='currentColor')
+        line(x1='0.738319' y1='0.539925' x2='12.3535' y2='12.1551' stroke='currentColor')
+    .screen__footer-wrapper
+      .screen__footer-announce
+        p.screen__footer-label Даты проведения конкурса:
+        p.screen__footer-date 01 — 31.05 / 2020
+      .screen__footer-note
+        p
+          svg(width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M0 6.35337L3.90271 4.99012L0 3.64663L1.34615 1.32374L4.44287 4.01073L3.67364 0H6.34615L5.57692 4.01073L8.65385 1.32374L10 3.64663L6.13405 4.99012L10 6.35337L8.65385 8.65651L5.57692 5.98927L6.34615 10H3.67364L4.44287 5.96952L1.34615 8.65651L0 6.35337Z' fill='currentColor')
+          span
+            | Победители могут выбрать любые 14 дней подряд в течение двух лет с даты окончания конкурса. Победители могут воспользоваться путевкой сами или подарить другому лицу.

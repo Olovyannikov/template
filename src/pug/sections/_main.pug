@@ -1,0 +1,227 @@
+main.page-content
+  section.animation-screen
+  include ./../sections/_screen.pug
+  
+  section#story.screen.screen--hidden.screen--story.js-scrollspy
+    .slider.swiper-container.js-slider
+      .swiper-wrapper
+        .slider__item.swiper-slide
+          h2.slider__item-title История
+          p.slider__item-text
+            | Джеймс Таргет был основателем компании «Fjord Inc.». С 1965 года «Fjord Inc.» прославилась надёжными и удобными чемоданами и аксессуарами для туристов.
+        .slider__item.swiper-slide
+          p.slider__item-text
+            | Когда Джеймсу было 7 лет, в их доме гостил дядюшка и развлекал детей рассказами о своей поездке в место, показавшееся малышу Таргету невероятным. Тогда Джеймс решил, что однажды посетит его, но не будет рассказывать о мечте, пока не осуществит.
+        .slider__item.swiper-slide
+          p.slider__item-text
+            | Джеймс Таргет стал увлеченным путешественником. Он посетил 5 континентов, 126 стран.
+        .slider__item.swiper-slide
+          p.slider__item-text
+            | Он сплавлялся по Амазонке и погружался в пещеры Франции, медитировал в горах Тибета и пожимал руку вождя племени Акугауа.
+        .slider__item.swiper-slide
+          p.slider__item-text
+            | Из своих поездок Джеймс Таргет привозил идеи, как сделать свои чемоданы «Fjord Inc.» удобными и приспособленными к разным дорожным условиям.
+        .slider__item.swiper-slide
+          p.slider__item-text
+            | Всё это время Джеймс не оставлял идею поездки своей мечты. Однако, как только он брался за планирование, возникали препятствия, не позволяющие отправиться туда.
+        .slider__item.swiper-slide
+          p.slider__item-text
+            | В возрасте 67 лет Джеймс Таргет попал под лавину и погиб. В своём завещании он поручил отправить в заветное путешествие трёх смельчаков, единых с ним духом.
+        .slider__item.swiper-slide
+          p.slider__item-text
+            | Тех, кто сможет узнать таинственное место, задавая вопросы специально обученному ИИ «Соне», ждет фантастическое путешествие.
+      .slider__controls
+        button.slider__control.slider__control--prev.js-control-prev(type='button' aria-label='Показать предыдущую историю')
+          svg(width='12' height='22' viewBox='0 0 12 22' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M11 1L1 11L11 21' stroke='currentColor' stroke-width='2' stroke-linejoin='round')
+        button.slider__control.slider__control--next.js-control-next(type='button' aria-label='Показать следующую историю')
+          svg(width='12' height='22' viewBox='0 0 12 22' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M1 1L11 11L1 21' stroke='currentColor' stroke-width='2' stroke-linejoin='round')
+      .slider__pagination.swiper-pagination
+  section#prizes.screen.screen--hidden.screen--prizes.js-scrollspy
+    .screen__wrapper
+      .prizes
+        h2.prizes__title ПРизы
+        .prizes__lead
+          p Найди ответ и получи один из призов:
+        ul.prizes__list
+          li.prizes__item.prizes__item--journeys
+            .prizes__icon
+              picture
+                source(srcset='img/prize1-mob.svg' media='(orientation: portrait)')
+                img(src='img/prize1.svg' alt='')
+            p.prizes__desc
+              b 3
+              span загадочных путешествия
+          li.prizes__item.prizes__item--cases
+            .prizes__icon
+              picture
+                source(srcset='img/prize2-mob.svg' media='(orientation: portrait)')
+                img(src='img/prize2.svg' alt='')
+            p.prizes__desc
+              b 7
+              span надежных чемоданов
+          li.prizes__item.prizes__item--codes
+            .prizes__icon
+              picture
+                source(srcset='img/prize3-mob.svg' media='(orientation: portrait)')
+                img(src='img/prize3.svg' alt='')
+            p.prizes__desc
+              b 900
+              span
+                | промокодов на скидку 15%
+                svg(width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  path(d='M0 6.35337L3.90271 4.99012L0 3.64663L1.34615 1.32374L4.44287 4.01073L3.67364 0H6.34615L5.57692 4.01073L8.65385 1.32374L10 3.64663L6.13405 4.99012L10 6.35337L8.65385 8.65651L5.57692 5.98927L6.34615 10H3.67364L4.44287 5.96952L1.34615 8.65651L0 6.35337Z' fill='currentColor')
+    .screen__footer.js-footer
+      button.screen__footer-enlarge.js-footer-toggler(type='button' aria-label='Показать сообщение')
+        svg(width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+          path(d='M0 6.35337L3.90271 4.99012L0 3.64663L1.34615 1.32374L4.44287 4.01073L3.67364 0H6.34615L5.57692 4.01073L8.65385 1.32374L10 3.64663L6.13405 4.99012L10 6.35337L8.65385 8.65651L5.57692 5.98927L6.34615 10H3.67364L4.44287 5.96952L1.34615 8.65651L0 6.35337Z' fill='currentColor')
+      button.screen__footer-collapse.js-footer-toggler(type='button' aria-label='Скрыть сообщение')
+        svg(width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+          line(x1='12.3536' y1='0.353553' x2='0.738349' y2='11.9688' stroke='currentColor')
+          line(x1='0.738319' y1='0.539925' x2='12.3535' y2='12.1551' stroke='currentColor')
+      .screen__footer-wrapper
+        .screen__footer-announce
+          p.screen__footer-label Даты проведения конкурса:
+          p.screen__footer-date 01 — 31.05 / 2020
+        .screen__footer-note
+          p
+            svg(width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M0 6.35337L3.90271 4.99012L0 3.64663L1.34615 1.32374L4.44287 4.01073L3.67364 0H6.34615L5.57692 4.01073L8.65385 1.32374L10 3.64663L6.13405 4.99012L10 6.35337L8.65385 8.65651L5.57692 5.98927L6.34615 10H3.67364L4.44287 5.96952L1.34615 8.65651L0 6.35337Z' fill='currentColor')
+            span
+              | Скидка 15% на единоразовое приобретение путёвки с 1 июня 2020 по 31 мая 2022 года. Суммируется с другими акциями
+  section#rules.screen.screen--hidden.screen--rules.js-scrollspy
+    .screen__wrapper
+      .rules
+        h2.rules__title Правила
+        .rules__lead
+          p
+            | Для того чтобы получить наследство Джеймса Таргета, тебе нужно выведать у «Сони», куда предстоит отправиться тебе в случае победы
+        ol.rules__list
+          li.rules__item
+            p
+              | Тебе отводится 
+              br
+              | 5 минут
+          li.rules__item
+            p Задавай любые вопросы в текстовом поле
+          li.rules__item
+            p Нажимай кнопку «Узнать», чтобы получить ответ
+          li.rules__item
+            p «Соня» может отвечать только Да или Нет
+        a.rules__link.btn(href='#game') Погнали!
+    .screen__disclaimer
+      .disclaimer
+        ul
+          li
+            a(href='#') Правовая информация
+          li
+            a(href='#') Подробные правила
+  section#game.screen.screen--hidden.screen--game.js-scrollspy
+    .screen__wrapper
+      .game
+        .game__header
+          h2.game__title Игра
+          .game__counter
+            span 05
+            | :
+            span 00
+        .game__body
+          .chat
+            .chat__body.js-chat
+              ul#messages.chat__list
+            .chat__footer
+              form#message-form.form(action='#' method='post')
+                label.visually-hidden(for='message-field') Поле для ввода вопроса
+                input#message-field.form__field(type='text')
+                button.form__button.btn
+                  | Узнать
+                  svg(width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(stroke='currentColor' stroke-width='2' d='M9 19V1')
+                    path(d='M1 9l8-8 8 8' stroke='currentColor' stroke-width='2' stroke-linejoin='round')
+        // временные кнопки для показа результата
+        .game__buttons
+          button.game__button.btn.js-show-result(type='button' data-target='result') Положительный результат
+          button.game__button.btn.js-show-result(type='button' data-target='result2') Положительный результат - 2
+          button.game__button.btn.js-show-result(type='button' data-target='result3') Отрицательный результат
+  section#result.screen.screen--hidden.screen--result
+    .screen__wrapper
+      .result.result--trip
+        .result__image
+          picture
+            source(srcset='img/result1-mob.png 1x, img/result1-mob@2x.png 2x' media='(max-width: 768px) and (orientation: portrait)')
+            img(src='img/result1.png' srcset='img/result1@2x.png 2x' alt='')
+        h2.result__title
+          span.visually-hidden ПОбеда!
+          svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 568.85 109.24')
+            path(d='M16,24.44V92H2.6V8H75V92H61.52V24.44H16Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M148.76,5.6c32.88,0,59.52,19.92,59.52,44.4s-26.64,44.4-59.52,44.4S89.24,74.48,89.24,50,115.88,5.6,148.76,5.6Zm0,72.12c24.48,0,44.4-12.36,44.4-27.72s-19.92-27.84-44.4-27.84C124,22.16,104,34.52,104,50S124,77.72,148.76,77.72Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M287.36,8V24.44H236v14.4h25.32c25.44,0,34,11.16,34,26.52,0,15.6-8.52,26.64-34,26.64H222.56V8h64.8ZM256.88,76.52c15.12,0,23.52-2,23.52-11.52S272,54.44,256.88,54.44H236V76.52h20.88Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M371.47,8V24.44H320.84V41.6h33.6V58h-33.6V75.56h50.64V92H307.4V8h64.08Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M382.39,110.24V75.56h7.44c4.56-4.68,7.8-18.36,8.76-56L399,8h48.6V75.56h10v34.68H442.87V92H397v18.24H382.39Zm51.72-34.68V24.44H411.55v3.12c-0.48,22.44-3.24,37.68-7.2,48h29.76Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M463.75,92l28-84h27.12l28.08,84H533.47l-7.8-23.52h-37.8L480.07,92H463.75Zm56.64-40L507,11.84,493.51,52h26.88Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M554.12,70.4L555.55,2H569l1.44,68.4H554.12Zm8.28,6.36c4.8,0,8,3.24,8,8.16a8,8,0,1,1-16.08,0C554.35,80,557.59,76.76,562.39,76.76Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+        .result__text
+          p ты отправляешься в Арктику!
+        .result__form
+          form.form.form--result(action='#' method='post')
+            label.form__label(for='email-field') зарегистрируй результат
+            input#email-field.form__field(type='email' placeholder='e-mail для регистации результата и получения приза' required='')
+            button.form__button.btn
+              | отправить
+              svg(width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(stroke='currentColor' stroke-width='2' d='M9 19V1')
+                path(d='M1 9l8-8 8 8' stroke='currentColor' stroke-width='2' stroke-linejoin='round')
+  section#result2.screen.screen--hidden.screen--result
+    .screen__wrapper
+      .result.result--prize
+        .result__image
+          picture
+            source(srcset='img/result2-mob.png 1x, img/result2-mob@2x.png 2x' media='(max-width: 768px) and (orientation: portrait)')
+            img(src='img/result2.png' srcset='img/result2@2x.png 2x' alt='')
+        h2.result__title
+          span.visually-hidden ПОбеда!
+          svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 568.85 109.24')
+            path(d='M16,24.44V92H2.6V8H75V92H61.52V24.44H16Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M148.76,5.6c32.88,0,59.52,19.92,59.52,44.4s-26.64,44.4-59.52,44.4S89.24,74.48,89.24,50,115.88,5.6,148.76,5.6Zm0,72.12c24.48,0,44.4-12.36,44.4-27.72s-19.92-27.84-44.4-27.84C124,22.16,104,34.52,104,50S124,77.72,148.76,77.72Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M287.36,8V24.44H236v14.4h25.32c25.44,0,34,11.16,34,26.52,0,15.6-8.52,26.64-34,26.64H222.56V8h64.8ZM256.88,76.52c15.12,0,23.52-2,23.52-11.52S272,54.44,256.88,54.44H236V76.52h20.88Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M371.47,8V24.44H320.84V41.6h33.6V58h-33.6V75.56h50.64V92H307.4V8h64.08Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M382.39,110.24V75.56h7.44c4.56-4.68,7.8-18.36,8.76-56L399,8h48.6V75.56h10v34.68H442.87V92H397v18.24H382.39Zm51.72-34.68V24.44H411.55v3.12c-0.48,22.44-3.24,37.68-7.2,48h29.76Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M463.75,92l28-84h27.12l28.08,84H533.47l-7.8-23.52h-37.8L480.07,92H463.75Zm56.64-40L507,11.84,493.51,52h26.88Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+            path(d='M554.12,70.4L555.55,2H569l1.44,68.4H554.12Zm8.28,6.36c4.8,0,8,3.24,8,8.16a8,8,0,1,1-16.08,0C554.35,80,557.59,76.76,562.39,76.76Z' transform='translate(-2.1 -1.5)' fill='none' stroke='currentColor')
+        .result__text
+          p чемодан «Fjord Inc.» твой
+        .result__form
+          form.form.form--result(action='#' method='post')
+            label.form__label(for='email-field2') зарегистрируй результат
+            input#email-field2.form__field(type='email' placeholder='e-mail для регистации результата и получения приза' required='')
+            button.form__button.btn
+              | отправить
+              svg(width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(stroke='currentColor' stroke-width='2' d='M9 19V1')
+                path(d='M1 9l8-8 8 8' stroke='currentColor' stroke-width='2' stroke-linejoin='round')
+  section#result3.screen.screen--hidden.screen--result
+    .screen__wrapper
+      .result.result--negative
+        .result__image
+          picture
+            source(srcset='img/result3-mob.png 1x, img/result3-mob@2x.png 2x' media='(max-width: 768px) and (orientation: portrait)')
+            img(src='img/result3.png' srcset='img/result3@2x.png 2x' alt='')
+        h2.result__title
+          span.visually-hidden Не угадал!
+          svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 660.77 109.24')
+            path(d='M2.66,92V8H16.1V42.2H53.3V8H66.74V92H53.3V58.64H16.1V92H2.66Z' transform='translate(-2.16 -1.5)' fill='none' stroke='currentColor')
+            path(d='M147.62,8V24.44H97V41.6h33.6V58H97V75.56h50.64V92H83.54V8h64.08Z' transform='translate(-2.16 -1.5)' fill='none' stroke='currentColor')
+            path(d='M199.22,8l20.52,42.36L235.34,8h16.44l-31,84H204.38l9.48-25.92L185.78,8h13.44Z' transform='translate(-2.16 -1.5)' fill='none' stroke='currentColor')
+            path(d='M273.74,24.44V92H260.3V8h50.16V24.44H273.74Z' transform='translate(-2.16 -1.5)' fill='none' stroke='currentColor')
+            path(d='M307.1,92l28-84h27.12l28.08,84H376.82L369,68.48h-37.8L323.42,92H307.1Zm56.64-40L350.3,11.84,336.86,52h26.88Z' transform='translate(-2.16 -1.5)' fill='none' stroke='currentColor')
+            path(d='M396.38,110.24V75.56h7.44c4.56-4.68,7.8-18.36,8.76-56L412.94,8h48.6V75.56h10v34.68H456.86V92H411v18.24H396.38ZM448.1,75.56V24.44H425.54v3.12c-0.48,22.44-3.24,37.68-7.2,48H448.1Z' transform='translate(-2.16 -1.5)' fill='none' stroke='currentColor')
+            path(d='M477.74,92l28-84h27.12L560.9,92H547.46l-7.8-23.52h-37.8L494.06,92H477.74Zm56.64-40-13.44-40.2L507.5,52h26.88Z' transform='translate(-2.16 -1.5)' fill='none' stroke='currentColor')
+            path(d='M568.7,76.88a13.77,13.77,0,0,0,5,1c6.6,0,10.44-6.24,12-58.32L586.22,8h46.2V92H619V24.44H598.82l-0.12,3.12C597.14,81,589,94.4,573.74,94.4a28.55,28.55,0,0,1-6.72-.84Z' transform='translate(-2.16 -1.5)' fill='none' stroke='currentColor')
+            path(d='M646.1,70.4L647.54,2H661l1.44,68.4H646.1Zm8.28,6.36c4.8,0,8,3.24,8,8.16a8,8,0,0,1-16.08,0C646.34,80,649.58,76.76,654.38,76.76Z' transform='translate(-2.16 -1.5)' fill='none' stroke='currentColor')
+        button.result__button.js-play(type='button')
+          | не сдавайся!
+          span
+            svg(width='27' height='22' viewBox='0 0 27 22' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M10.6899 1.47998C5.42992 1.47998 1.16992 5.73998 1.16992 11C1.16992 16.26 5.42992 20.52 10.6899 20.52C15.9499 20.52 20.2099 16.26 20.2099 11V7.13998' stroke='currentColor' stroke-width='2' stroke-miterlimit='10')
+              path(d='M15.1099 12.5099L20.1499 7.13989L25.3099 12.6299' stroke='currentColor' stroke-width='2' stroke-miterlimit='10' stroke-linejoin='round')
